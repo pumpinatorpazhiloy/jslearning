@@ -1437,14 +1437,21 @@ P.S. Функции вызывать не обязательно*/
 
 // console.log(number);
 
-const user = (function(){
-	const privat = function() {
-		console.log('I am privat!');
-	};
+// const user = (function(){
+// 	const privat = function() {
+// 		console.log('I am privat!');
+// 	};
 
-	return {
-		sayHello: privat
-	};
-}());
+// 	return {
+// 		sayHello: privat
+// 	};
+// }());
 
-user.sayHello();
+// user.sayHello();
+
+// CodeWars
+function boolToWord(bool){
+	return `${bool === true ? 'Yes' : 'No'}`;
+}
+
+console.log(boolToWord(false));
